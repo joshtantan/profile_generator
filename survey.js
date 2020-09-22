@@ -6,7 +6,7 @@ const rl = readline.createInterface({
 });
 
 rl.question(`What's your name? Nicknames are also acceptable :)`, (answer) => {
-  let profileSummary = String(answer);
+  let profileSummary = answer;
 
   rl.question(`What's an activity you like doing?`, (answer) => {
     const activity = answer;
@@ -25,7 +25,7 @@ rl.question(`What's your name? Nicknames are also acceptable :)`, (answer) => {
 
             rl.question(`What is your superpower? In a few words, tell us what you are amazing at!`, (answer) => {
               const superpower = answer;
-              profileSummary += ` loves listening to ${music} while ${activity}, devouring ${food} for ${meal}, prefers ${sport} over any other sport, and is amazing at ${superpower} at inopportune times.`
+              profileSummary += ` loves listening to ${music} while ${activity}, devouring ${food} for ${meal}, prefers ${sport} over any other sport, and is amazing at ${superpower} at inopportune times.`;
               console.log(profileSummary);
 
               rl.close();
